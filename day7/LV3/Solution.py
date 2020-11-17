@@ -20,3 +20,11 @@ def solution2(arr, s):
             return [s - i, i]
         inner.append(i)
     return None
+
+def solution3(arr, s):
+    inner = set()
+    for i in arr:
+        if s - i in inner:
+            return [s - i, i]
+        inner.add(i)
+    return None
