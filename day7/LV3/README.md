@@ -12,3 +12,5 @@ or
 `python -m pip install unittest --user`
 
 <br/><br/>
+
+#### solution3 is the fasttest solution
