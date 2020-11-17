@@ -15,8 +15,8 @@ def solution1(arr, s):
 
 def solution2(arr, s):
     inner = []
-    for i in arr1:
-        if s1 - i in inner:
-            return [s1 - i, i]
+    for i in arr:
+        if s - i in inner:
+            return [s - i, i]
         inner.append(i)
     return None
