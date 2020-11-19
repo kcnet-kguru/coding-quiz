@@ -23,7 +23,7 @@ def solution1(n):
     u = [1]
     heapq.heapify(u)
 
-    for i in range(n):
+    for _ in range(n):
         x = heapq.heappop(u)
         heapq.heappush(u, 2 * x + 1)
         heapq.heappush(u, 3 * x + 1)
@@ -31,5 +31,24 @@ def solution1(n):
         heapq.heapify(u)
     return heapq.heappop(u)
 
+from collections import deque
+def solution2(n):
+    x = 1
+    dq1 = deque()
+    dq2 = deque()
+
+    for _ in range(n):
+        dq1.append(2 * x + 1)
+        dq2.append(3 * x + 1)
+
+        x = min(dq1[0], dq2[0])
+
+        if x == dq1[0]:
+            x = dq1.popleft()
+        if x == dq2[0]:
+            x = dq2.popleft()
+    return x
+
+
 if __name__ == "__main__":
-    print(solution1(30))
+    print(solution1(10000))
