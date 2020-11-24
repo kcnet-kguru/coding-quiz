@@ -15,3 +15,5 @@ if __name__ == '__main__' :
     print(spinWords("Hey fellow warriors"))   #returns "Hey wollef sroirraw"
     print(spinWords("This is a test"))       # returns "This is a test"
     print(spinWords("This is another test"))  #returns "This is rehtona test"
+
+## find solution List comprehensions(How to make one line code)
