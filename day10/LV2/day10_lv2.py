@@ -25,3 +25,5 @@ if __name__ == '__main__':
     count_the_letter("Hello, World!" , "1112111121311" )
     count_the_letter("aaaaaaaaaaaa", "123456789101112")
     count_the_letter("Hello, World! It's me, JomoPipi!" ,"11121111213112111131224132411122")
+    
+    ## Find solution using dict()
