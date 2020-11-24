@@ -16,4 +16,5 @@ if __name__ == '__main__' :
     print(spinWords("This is a test"))       # returns "This is a test"
     print(spinWords("This is another test"))  #returns "This is rehtona test"
 
+## 같은 알고리즘을 한줄로 표현을 할 수 있습니다. Python의 장점 중 하나인 comprehesion을 사용하는 방법입니다.
 ## find solution List comprehensions(How to make one line code)
