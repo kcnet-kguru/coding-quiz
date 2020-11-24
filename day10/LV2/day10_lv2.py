@@ -26,4 +26,5 @@ if __name__ == '__main__':
     count_the_letter("aaaaaaaaaaaa", "123456789101112")
     count_the_letter("Hello, World! It's me, JomoPipi!" ,"11121111213112111131224132411122")
     
-    ## Find solution using dict()
+## dictionary 자료구조를 활용하는 방법도 있습니다. dictionary 자료구조를 활용하면 indices와 letter_num등의 두개 리스트를 같이 사용하는 것을 방지할 수 있을듯 하네요    
+## Find solution using dict()
