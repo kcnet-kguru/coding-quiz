@@ -1,0 +1,22 @@
+Sheldon, Leonard, Penny, Rajesh 그리고 Howard는 "Double Cola" 음료 자판기를 위해 줄을 서 있다; 다른 사람들은 줄에 없다.
+
+줄에 서 있는 첫 번째 사람(셸던)은 캔을 사서 마시고 두 배가 된다.
+
+그 결과 셸던 두 명이 줄 맨 끝으로 간다. 그리고 다음 줄(레오나드)은 캔을 사서 마시고 두 레오나드가 줄 끝에 다시 서게 된다.
+
+예를 들어 페니는 콜라를 세 번째 캔으로 마시며 줄 서 있는 모습은 다음과 같다.
+
+Rajesh, Howard, Sheldon, Sheldon, Leonard, Leonard, Penny, Penny
+
+n번째 콜라를 마실 사람의 이름을 돌려줄 프로그램을 작성한다.
+
+Input:
+입력 데이터는 최소 1개의 이름과 단일 정수 n을 포함하는 배열로 구성되며, 이 배열은 선택한 언어가 지원하는 가장 큰 숫자만큼 높아질 수 있다(물론 그러한 제한이 있는 경우).
+
+
+Output / Examples:
+콜라 n번째 캔을 마시는 사람의 이름인 단일 줄을 반환하십시오. 그 깡통에는 1부터 번호가 매겨져 있다.
+
+who_is_next(["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"], 1) == "Sheldon"
+who_is_next(["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"], 52) == "Penny"
+who_is_next(["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"], 7230702951) == "Leonard"
