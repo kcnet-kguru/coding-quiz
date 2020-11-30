@@ -13,7 +13,8 @@ test_case = [
 class Test(unittest.TestCase):
     def test1(self):
         print("\nSolution #1 Unittest")
-        for idx, case in enumerate(test_case):
+        copy_case = deepcopy(test_case)
+        for idx, case in enumerate(copy_case):
             start_time = datetime.datetime.now()
             self.assertEqual(Solution.parts_sums(case[0]), case[1])
             end_time = datetime.datetime.now()
