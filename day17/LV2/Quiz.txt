@@ -1,0 +1,15 @@
+함수, 지속성, 즉 양수 매개변수 숫자를 입력하여 그 곱셈 지속성을 반환하는 함수를 쓰십시오. 이것은 한 자릿수에 도달할 때까지 숫자를 곱해야 하는 횟수입니다.
+
+For example:
+
+ persistence(39) === 3 // because 3*9 = 27, 2*7 = 14, 1*4=4
+                       // and 4 has only one digit
+
+ persistence(999) === 4 // because 9*9*9 = 729, 7*2*9 = 126,
+                        // 1*2*6 = 12, and finally 1*2 = 2
+
+ persistence(4) === 0 // because 4 is already a one-digit number
+
+ persistence(25) === 2
+
+ persistence(999) === 4
