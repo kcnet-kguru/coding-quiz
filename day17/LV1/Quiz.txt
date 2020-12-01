@@ -1,0 +1,6 @@
+전달된 첫 번째 인수(문자열)가 두 번째 인수(문자열)로 끝나는 경우 true를 반환하도록 솔루션을 완료하십시오.
+
+Examples:
+
+solution('abc', 'bc') // returns true
+solution('abc', 'd') // returns false
