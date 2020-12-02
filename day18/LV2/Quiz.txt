@@ -1,0 +1,41 @@
+지정된 문자열 s. 소문자로 a에서 z까지의 문자만 포함.
+
+알파벳 세트는 abcdefghijklmnoppqfirstuvwxyz에 의해 주어진다.
+
+알파벳 2세트는 2개 이상의 알파벳을 의미한다.
+
+당신의 임무는 누락된 편지를 찾는 것이다. a-z 오더로 출력해야 할 수도 있다. 두 개 이상의 알파벳 집합에서 두 개 이상의 누락된 문자가 있을 수 있다.
+
+문자열에 알파벳의 모든 문자가 포함된 경우 빈 문자열 ""을 반환하십시오.
+
+Example
+For s='abcdefghijklmnopqrstuvwxy'
+
+The result should be 'z'
+
+For s='aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyy'
+
+The result should be 'zz'
+
+For s='abbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxy'
+
+The result should be 'ayzz'
+
+For s='codewars'
+
+The result should be 'bfghijklmnpqtuvxyz'
+
+Input/Output
+[input] string s
+
+지정된 문자열에는 소문자로 된 알파벳 집합이 하나 이상 포함되어 있다.
+
+[output] a string
+
+각 알파벳에는 포함되어 있지만 문자열에는 포함되어 있지 않은 문자를 찾으십시오. a-z 오더로 출력한다. 누락된 알파벳이 반복될 경우 "bcdbcddd"가 아닌 "bbccdddd"처럼 반복하십시오.
+
+TestCase
+find("abcdefghijklmnopqrstuvwxy") => "z"
+find("abcdefghijklmnopqrstuvwxyz") => "z"
+find("aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyy") => "z"
+find("abbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxy") => "z"
