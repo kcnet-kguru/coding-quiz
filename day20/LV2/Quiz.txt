@@ -1,0 +1,7 @@
+판그람은 알파벳의 모든 글자를 한 번 이상 포함하는 문장이다. 예를 들어 '빠른 갈색 여우가 게으른 개를 뛰어넘는다'는 문장은 판그람인데, 이는 A-Z라는 글자를 한 번 이상 사용하기 때문이다(사례는 무관하다).
+
+문자열이 주어지면 판그람인지 아닌지를 감지하라. True이면 True, False이면 False. 숫자 및 구두점을 무시하십시오.
+
+example
+The quick brown fox jumps over the lazy dog. => true
+You shall not pass! => false
