@@ -1,0 +1,22 @@
+기본적으로 당신은 n명의 사람들이 원을 그리며, 이렇게 k 요소의 스텝에서 제거된다고 가정해야 한다.
+
+josephus_survivor(7,3) => means 7 people in a circle;
+one every 3 is eliminated until one remains
+[1,2,3,4,5,6,7] - initial sequence
+[1,2,4,5,6,7] => 3 is counted out
+[1,2,4,5,7] => 6 is counted out
+[1,4,5,7] => 2 is counted out
+[1,4,5] => 7 is counted out
+[1,4] => 5 is counted out
+[4] => 1 counted out, 4 is the last element - the survivor!
+
+Note and Tips
+더 많은 숫자가 사용될수록, 생존자의 수를 계산하기 위해 배열/목록을 사용하는 것은 너무 느릴 수 있다
+
+Test Case
+
+josephus_survivor(7, 3) => 4
+josephus_survivor(11, 19) => 10
+josephus_survivor(40, 3) => 28
+josephus_survivor(14, 2) => 13
+josephus_survivor(100, 1) => 100

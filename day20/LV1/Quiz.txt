@@ -1,0 +1,19 @@
+주어진 문자열을 동일한 크기의 다른 문자열로 나누는 것이다(문자열 크기는 메소드에 전달됨).
+
+Example:
+
+Split the below string into other strings of size #3
+
+'supercalifragilisticexpialidocious'
+
+Will return a new string
+'sup erc ali fra gil ist ice xpi ali doc iou s'
+
+주의:
+String length is always greater than 0
+String has no spaces
+Size is always positive
+
+plitInParts("HelloKata", 3) => Hel loK ata
+splitInParts("HelloKata", 1) => H e l l o K a t a
+splitInParts("HelloKata", 9) => HelloKata
