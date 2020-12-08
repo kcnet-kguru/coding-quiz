@@ -1,0 +1,41 @@
+존은 그가 가진 돈 중에 일부인 f0를 첫해에 은행에 입금한다. 그는 매년 생활비로 c0을 인출하고 싶어한다.
+
+여기 그의 은행원이 가진 계획이 있다.
+
+- 첫해에 f0를 입금한다.
+
+- 그의 은행 계좌는 연 p퍼센트의 이자율을 가지고 있으며, 수년 동안 일정하다.
+
+- 존은 매년 c0을 인출할 수 있고, 그 해에 원할 때마다 그것을 가져갈 수 있다. 그는 그의 삶의 질을 유지하기 위해 매년 i%의 인플레이션을 고려해야 한다. i는 몇 년 동안 일정하게 있어야 한다.
+
+- 금액 중에 매년 f0..fn-1, c0..cn-1 일부가 그의 계좌에서 빠져나간다.
+
+- f0, p, c0, i를 부여하면 은행원은 존이 N번째 해까지 그럴수 있다고 보장한다.
+
+Example:
+f0 = 100000, p = 1 percent, c0 = 2000, n = 15, i = 1 percent
+beginning of year 2 -> f1 = 100000 + 0.01*100000 - 2000 = 99000;  c1 = c0 + c0*0.01 = 2020 (with inflation of previous year)
+beginning of year 3 -> f2 =  99000 + 0.01*99000 - 2020  = 97970;  c2 = c1 + c1*0.01 = 2040.20 
+(with inflation of previous year, truncated to 2040)
+beginning of year 4 -> f3 =  97970 + 0.01*97970 - 2040  = 96909.7 (truncated to 96909); 
+c3 = c2 + c2*0.01 = 2060.4 (with inflation of previous year, truncated to 2060)
+
+등등...
+
+존은 은행원의 계획이 옳고 그른지 알고 싶어한다. 매개변수 f0, p, c0, n, i 을 주어지면 fortune 함수가 계획을 지속할 수 있다면 true 그렇지 않다면 false를 리턴하라.
+
+Some cases:
+fortune(100000, 1, 2000, 15, 1) -> True
+fortune(100000, 1, 10000, 10, 1) -> True
+fortune(100000, 1, 9185, 12, 1) -> False
+
+For the last case you can find below the amounts of his account at the beginning of each year:
+100000, 91815, 83457, 74923, 66211, 57318, 48241, 38977, 29523, 19877, 10035, -5
+
+f11 = -5 so he has no way to withdraw something for his living in year 12.
+
+BankerPlan.fortune(100000, 1, 2000, 15, 1) => true
+BankerPlan.fortune(100000, 1, 9185, 12, 1) => false
+BankerPlan.fortune(100000000, 1, 100000, 50, 1) => true
+BankerPlan.fortune(100000000, 1.5, 10000000, 50, 1) => false
+BankerPlan.fortune(100000000, 5, 1000000, 50, 1) => true
