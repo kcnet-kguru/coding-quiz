@@ -1,0 +1,4 @@
+각 단어의 첫 글자를 그 끝으로 옮긴 다음, 단어의 끝에 "ay"를 추가한다. 구두점 표시는 그대로 두십시오.
+
+pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
+pigIt('Hello world !');     // elloHay orldway !

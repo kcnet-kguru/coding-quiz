@@ -1,0 +1,38 @@
+사용자의 생일을 기준으로 악당 이름을 반환하는 기능을 만든다. 생일은 유효한 날짜 개체로 기능에게 전달되므로 단순성을 위해 문자열을 날짜로 변환하는 것에 대해 걱정할 필요가 없다.
+
+이름은 월에서 오고 성은 날짜의 마지막 자리로부터 올 것이다.
+
+Month -> first name
+
+January -> "The Evil"
+February -> "The Vile"
+March -> "The Cruel"
+April -> "The Trashy"
+May -> "The Despicable"
+June -> "The Embarrassing"
+July -> "The Disreputable"
+August -> "The Atrocious"
+September -> "The Twirling"
+October -> "The Orange"
+November -> "The Terrifying"
+December -> "The Awkward"
+Last digit of date -> last name
+
+0 -> "Mustache"
+1 -> "Pickle"
+2 -> "Hood Ornament"
+3 -> "Raisin"
+4 -> "Recycling Bin"
+5 -> "Potato"
+6 -> "Tomato"
+7 -> "House Cat"
+8 -> "Teaspoon"
+9 -> "Laundry Basket"
+
+The returned value should be a string in the form of "First Name Last Name".
+
+For example, a birthday of November 18 would return "The Terrifying Teaspoon"
+
+"May 3" -> "The Despicable Raisin"
+"April 21" -> "The Trashy Pickle"
+"December 17" -> "The Awkward House Cat"
