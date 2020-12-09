@@ -1,0 +1,7 @@
+n까지 포함하면, 이 함수는 3과 5의 모든 배수의 합을 반환한다.
+
+For example:
+
+findSum(5) should return 8 (3 + 5)
+
+findSum(10) should return 33 (3 + 5 + 6 + 9 + 10)
