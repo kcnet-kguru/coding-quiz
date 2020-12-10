@@ -1,0 +1,34 @@
+문자열에 적대적인 두 집단이 있다. 
+
+왼쪽 옆글씨와 오른쪽 옆글씨 사이의 긴장이 너무 고조되어 전쟁이 시작되었다. 
+
+전쟁터에서 그들을 돕기 위해 공습이라고 불리는 이 문자들 - 대시와 점들이 전쟁터의 모든 곳에 퍼져 있다.
+
+전투 문자열을 받아들이는 함수는 작은 글자와 폭탄 투하 장소를 의미하는 *로 구성된다.
+
+폭탄이 터진 후 누가 이기는 지를 리턴하라.
+
+왼쪽이 이기면 return Left side wins!, 오른쪽이 이기면 return Right side wins!,
+
+그 외의 경우에는 return Let's fight again!.
+
+The left side letters and their power:
+
+ w - 4
+ p - 3 
+ b - 2
+ s - 1
+The right side letters and their power:
+
+ m - 4
+ q - 3 
+ d - 2
+ z - 1
+The other letters don't have power and are only victims.
+* 폭탄은 인접한 글자들을 죽인다. ( i.e. aa*aa => a___a, **aa** => ______ );
+
+Example
+alphabetWar("s*zz");           //=> Right side wins!
+alphabetWar("*zd*qm*wp*bs*"); //=> Let's fight again!
+alphabetWar("zzzz*s*");       //=> Right side wins!
+alphabetWar("www*www****z");  //=> Left side wins!

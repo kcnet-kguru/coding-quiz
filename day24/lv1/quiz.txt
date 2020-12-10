@@ -1,0 +1,12 @@
+13일의 금요일이나 블랙 프라이데이는 불길한 날로 여겨진다. 해당 연도에 얼마나 많은 불운한 날이 있는지 계산한다.
+
+주어진 해의 13일의 금요일 번호를 찾아라.
+
+Input: Year as an integer.
+
+Output: Number of Black Fridays in the year as an integer.
+
+Examples:
+
+unluckyDays(2015) == 3
+unluckyDays(1986) == 1
