@@ -1,0 +1,27 @@
+Given a string of letters a, b, n how many different ways can you make the word "banana" by crossing out various letters and then reading left-to-right?
+
+a, b, n 로 된 문자열을 입력 받아 "banana" 로 출력할 수 있는 가지수를 전부 리턴하세요
+
+(Use - to indicate a crossed-out letter)
+
+Example
+Input
+
+bbananana
+
+Output
+
+b-anana--
+b-anan--a
+b-ana--na
+b-an--ana
+b-a--nana
+b---anana
+-banana--
+-banan--a
+-bana--na
+-ban--ana
+-ba--nana
+-b--anana
+
+banana 로 표시 가능 한 모든 것을 출력하면 되고, 순서는 상관없습니다.
