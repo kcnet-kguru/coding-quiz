@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+## Day 11
+
+### How to running Unittest
+
+`python -m unittest test.py --v`
+
+### If you don`t have unittest module
+
+Run this command :  
+`pip install unittest --user`  
+or  
+`python -m pip install unittest --user`
+
+<br/><br/>
+
+### Main Idea in each case : sum(list) - a - b = a * b
+=======
 ## 📚 Day 11
 
 ### 🚀 Level 3
@@ -33,3 +51,4 @@ removeNb(26)  // should return { {15, 21}, {21, 15} }
 removeNb(26) // should return [[15, 21], [21, 15]]
 ```
 
+>>>>>>> d042d4932a5f09b1a1dc8acf68291586a97aeb58
